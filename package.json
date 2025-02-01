@@ -1,0 +1,31 @@
+{
+  "name": "do-support",
+  "displayName": "do-support",
+  "description": "Syntax highlighter and autocompletion for ModelSim DO files",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "do",
+      "aliases": ["do", "do"],
+      "extensions": [".do"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "do",
+      "scopeName": "source.do",
+      "path": "./syntaxes/do.tmLanguage.json"
+    }],
+    "snippets": [
+      {
+        "language": "do",
+        "path": "./snippets/do.snippets.json"
+      }
+    ]
+  }
+}

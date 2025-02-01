@@ -1,0 +1,34 @@
+{
+  "ModelSim DO File Snippets": {
+    "vcom": {
+      "prefix": "vcom",
+      "body": ["vcom ${1:file}.vhd"],
+      "description": "Compile VHDL file"
+    },
+    "vsim": {
+      "prefix": "vsim",
+      "body": ["vsim ${1:work}.${2:entity}"],
+      "description": "Simulate VHDL entity"
+    },
+    "add wave": {
+      "prefix": "addwave",
+      "body": ["add wave ${1:*}"],
+      "description": "Add waveforms to simulation"
+    },
+    "force": {
+      "prefix": "force",
+      "body": ["force ${1:signal} ${2:value} ${3:time} -repeat ${4:interval}"],
+      "description": "Force a signal in the simulation"
+    },
+    "run": {
+      "prefix": "run",
+      "body": ["run ${1:time}"],
+      "description": "Run simulation for a specified time"
+    },
+    "repeat": {
+      "prefix": "repeat",
+      "body": ["-repeat ${1:time}"],
+      "description": "Repeat with specified time interval"
+    }
+  }
+}

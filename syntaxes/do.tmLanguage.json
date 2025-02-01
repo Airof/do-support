@@ -1,0 +1,82 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "do",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#commands"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#filenames"
+		},
+		{
+			"include": "#numbers"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.number-sign.do",
+					"match": "#.*$"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.do",
+					"match": "\\b(vcom|vsim|add|wave|force|run)\\b"
+				}
+			]
+		},
+		"commands": {
+			"patterns": [
+				{
+					"name": "storage.modifier.command.do",
+					"match": "\\B-(r|repeat)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.do",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.do",
+					"match": "\\\\."
+				}
+			]
+		},
+		"filenames": {
+			"patterns": [
+				{
+					"name": "constant.language.vhdl",
+					"match": "\\b[A-Za-z0-9_/.-]+\\.vhd\\b"
+				},
+				{
+					"name": "entity.name.type.do",
+					"match": "\\bwork\\.[A-Za-z_][A-Za-z0-9_]*\\b"
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.do",
+					"match": "\\b\\d+(\\.\\d+)?(ns|ps|fs|ms|s|us|kHz|MHz|GHz)?\\b"
+				}
+			]
+		}
+	},
+	"scopeName": "source.do"
+}
