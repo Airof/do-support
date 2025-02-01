@@ -15,7 +15,7 @@ This is a very simple extension that provides code snippets and syntax highlight
 ### Manual Installation
 
 1. Download the `.vsix` file from the repository root.
-   - [Download do-support-0.0.1.vsix](https://github.com/Airof/do-support/raw/main/do-support-0.0.1.vsix)
+   - [Download do-support-0.0.1.vsix](https://github.com/Airof/do-support/blob/master/do-support-0.0.1.vsix)
 2. Open **VS Code**.
 3. Open the **Extensions** tab (`Ctrl+Shift+X`).
 4. Click on the **three dots (⋮)** in the top-right corner.
