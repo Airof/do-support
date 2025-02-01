@@ -9,18 +9,26 @@
   "categories": [
     "Programming Languages"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Airof/do-support"
+  },
   "contributes": {
-    "languages": [{
-      "id": "do",
-      "aliases": ["do", "do"],
-      "extensions": [".do"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "do",
-      "scopeName": "source.do",
-      "path": "./syntaxes/do.tmLanguage.json"
-    }],
+    "languages": [
+      {
+        "id": "do",
+        "aliases": ["DO"],
+        "extensions": [".do"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "do",
+        "scopeName": "source.do",
+        "path": "./syntaxes/do.tmLanguage.json"
+      }
+    ],
     "snippets": [
       {
         "language": "do",

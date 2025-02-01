@@ -17,7 +17,7 @@
     },
     "force": {
       "prefix": "force",
-      "body": ["force ${1:signal} ${2:value} ${3:time} -repeat ${4:interval}"],
+      "body": ["force ${1:signal} ${2:value} ${3:time}"],
       "description": "Force a signal in the simulation"
     },
     "run": {
